@@ -2,9 +2,10 @@
 .App{
   display: flex;
   flex-direction: column;
-  padding: 20px 600px;
+  margin: 20px 40%;
   min-width: 317px;
   min-height: 780px;
+  
 }
 h4, h1, p{
   margin: 0px;
