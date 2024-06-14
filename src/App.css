@@ -1,38 +1,111 @@
-.App {
-  text-align: center;
+
+.App{
+  display: flex;
+  flex-direction: column;
+  padding: 20px 600px;
+  min-width: 317px;
+  min-height: 780px;
+}
+h4, h1, p{
+  margin: 0px;
+  padding: 0px; 
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.main--image {
+  flex-basis: 317px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.main--image > img {
+  height: 100%;
+  width: 100%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.main--footer{
+  background-color: #161619;
+  flex-basis: 64px;
+  display: flex;
+  justify-content: space-evenly ;
+  align-items: center;
+  gap: 10px;
+}
+
+.footerImg{
+  width: 20px;
+}
+
+.main--text{
+  background-color: #1A1B21;
+  flex-basis: 399;
+}
+
+.main--text_hobby{
+  padding: 5% 10%;
+
+}
+
+.main--text_hobby > h2 {
+  color: #F5F5F5;
+  margin-bottom: 0;
+}
+.main--text_hobby > p {
+  color: #DCDCDC;
+  font-size: 0.9rem;
+  
+}
+
+.main--text_details > h1 {
+  color: #ffff;
+  margin: 0%;
+  padding: 0;
+}
+.main--text_details > h3 {
+  color: #F3BF99;
+  font-size: 1rem;
+  font-weight: 400;
+  margin: 0%;
+  padding: 0;
+}
+.main--text_details > p {
+  margin: 0%;
+  padding: 0;
+  color: #F5F5F5;
+}
+
+.main--text_details{
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+
+.main--text_button{
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-evenly;
+  
+  
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#btn1, #btn2{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+#btn1{
+  background-color: #FFFFFF;
+  color: #374151;
+  padding: 8px 30px;
+  border-radius: 12px;
+  flex-basis: 40%;
+  border: none;
+}
+
+#btn2{
+  background-color: #5093E2;
+  color: #374151;
+  padding: 8px 30px;
+  border-radius: 12px;
+  flex-basis: 40%;
+  border: none;
 }
